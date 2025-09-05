@@ -19,7 +19,6 @@ public abstract class Singleton<T> : MonoBehaviour where T : Component
                     _instance = obj.AddComponent<T>();
                 }
             }
-            
             return _instance;
         }
     }
@@ -30,6 +29,7 @@ public abstract class Singleton<T> : MonoBehaviour where T : Component
         {
             _instance = this as T;
             DontDestroyOnLoad(gameObject);
+            // 
             SceneManager.sceneLoaded += OnSceneLoad;
         }
         else

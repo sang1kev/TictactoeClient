@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MainPanelController : MonoBehaviour
 {
@@ -13,12 +12,12 @@ public class MainPanelController : MonoBehaviour
         GameManager.Instance.ChangeToGameScene(Constants.GameType.DualPlay);
     }
 
-    public void OnClickMultiplePlayButton()
+    public void OnClickMultiPlayButton()
     {
         GameManager.Instance.ChangeToGameScene(Constants.GameType.MultiPlay);
     }
 
-    public void OnClickSettingButton()
+    public void OnClickSettingsButton()
     {
 
     }
